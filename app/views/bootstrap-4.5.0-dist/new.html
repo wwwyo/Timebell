@@ -1,0 +1,61 @@
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timebell</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-secondary" style="height: 100vh;">
+      <nav class="navbar navbar-light pb-1 bg-dark">
+        <a class="navbar-brand text-white" href="#" style="font-size: 25px;">Timebell</a>
+        <div class="d-flex flex-row-reverse bd-highlight">
+          <a class="navbar-brand  text-light mt-2 mr-5" href="#" style="font-size: 15px;">ログアウト</a>
+          <a class="navbar-brand  text-light mt-2 mr-5" href="#" style="font-size: 15px;">ユーザー名</a>
+        </div>
+      </nav>
+      <div class="container" style="overflow: scroll;">
+        <div class="row " style="background-color: lightgray; height: 92%;" >
+          <div class="mt-5 mx-auto" style="width: 80%; ">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label for="title">タイトル</label>
+                  <input type="title" class="form-control" id="title" placeholder="TO DO">
+                </div>
+                <div class="form-group col-12">
+                  <label for="text">メモ</label>
+                  <textarea type="text-area" class="form-control" id="text"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label for="one_day">OneDay</label>
+                  <select id="one_day" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-12">
+                  <label for="habit">habit</label>
+                  <select id="habit" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-3">
+                <button type="submit" class="btn btn-primary"  style="width: 20%">作成</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
